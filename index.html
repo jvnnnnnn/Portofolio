@@ -1,149 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jovinne – Enthusiastic Programmer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- nav -->
-  <table width="100%" cellspacing="0" cellpadding="8" border="0">
-    <tr>
-      <td>
-        <h1>Jovinne.</h1>
-      </td>
-      <td>
-        <a href="#home">Home</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#services">Services</a> |
-        <a href="#experience">Experience</a> |
-        <a href="#contact">Contact</a>
-      </td>
-    </tr>
-  </table>
-
-  <hr>
-  <!-- bagian atas -->
-  <a name="home"></a>
-  <table width="100%" cellpadding="12" cellspacing="0" border="0">
-    <tr valign="top">
-      <td width="55%">
-        <h2>Hey, there</h2>
-        <h1>I AM<br>JOVINNE</h1>
-        <br>
-        <table border="1" cellspacing="0" cellpadding="6">
-          <tr>
-            <td>Siap untuk peluang baru!</td>
-          </tr>
-        </table>
-        <p>
-          Mahasiswa Informatika tahun ketiga di Universitas Pelita Harapan yang memiliki motivasi tinggi serta berkomitmen pada pembelajaran dan pengembangan diri secara berkelanjutan, sekaligus bilingual dalam Bahasa Indonesia dan Inggris. Aktif terlibat dalam organisasi, memperoleh pengalaman langsung dalam kerja tim dan kepemimpinan. Berdedikasi untuk terus mempelajari teknologi, keamanan siber, dan analisis data, dengan minat yang kuat pada bidang matematika.
-        </p>
-        <p>
-          <a href="#contact"><b>Contact Me →</b></a>
-        </p>
-      </td>
-      <td>
-        <img src="img/jvn.jpg" alt="Jovinne" width="360" height="480">
-        <h3>ENTHUSIASTIC<br>PROGRAMMER</h3>
-      </td>
-    </tr>
-  </table>
-
-  <hr>
-  <!-- bagian project -->
-  <a name="projects"></a>
-  <h2>RECENT PROJECTS</h2>
-  <table width="100%" cellpadding="10" cellspacing="0" border="0">
-    <tr>
-      <td>
-        <img src="img/EcoCityMatchPic.png" alt="Project 1 mockup" width="200" height="110"><br>
-        <h3>EcoCity Match Game (Ren'Py) </h3>
-        Pengembangan permainan edukasi puzzle match yang mengangkat isu SDG 11 tentang kota berkelanjutan sebagai media pembelajaran interaktif.
-      </td>
-      <td>
-        <img src="img/FlightSimulatorPicture.png" alt="Project 2 mockup" width="210" height="120"><br>
-        <h3>Flight Simulator (Js & CSS)</h3>
-        Pengembangan program mini game Flight Simulator sederhana sebagai sarana belajar logika pemrograman dan simulasi interaktif.
-      </td>
-      <td>
-        <img src="img/DAAUASPic.png" alt="Project 3 mockup" width="240" height="150"><br>
-        <h3>Comparative Study of MST Algorithms for MRT Pathway (C++)</h3>
-        Penelitian untuk menganalisis dan membandingkan algoritma MST untuk mengetahui mana yang paling cepat dan efisien dalam penggunaan storage.
-      </td>
-    </tr>
-  </table>
+  <!-- NAV -->
+  <header class="section">
+    <div class="container nav">
+      <h1 class="brand">Jovinne.</h1>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#projects">Works</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a class="pill" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <hr>
 
-  <!-- bagian i can help u with -->
-  <a name="services"></a>
-  <h2>I CAN HELP YOU WITH</h2>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-      <td>
-        <h3>01 Website Design</h3>
-        Antarmuka untuk situs web dengan struktur yang jelas dan visual yang kuat.
-      </td>
-      <td>
-        <h3>02 Mobile App</h3>
-        Mengembangkan mobile app yang sesuai keinginan dengan sentuhan estetika.
-      </td>
-      <td>
-        <h3>03 Data Analysis </h3>
-        Pembuatan data tren atau prediksi mengenai data analisis.
-      </td>
-      <td>
-        <h3>04 Game Creation</h3>
-        Ulasan UX, dan pengembangan game sesuai keinginan.
-      </td>
-    </tr>
-  </table>
+  <!-- HERO -->
+  <section id="home" class="hero-container hero">
+    <div class="hero-left">
+      <h2 class="subtle">Hey, there</h2>
+      <h1 class="hero-title">I AM<br>JOVINNE</h1>
+
+      <div class="badge">
+        <span class="dot"></span>
+        Terbuka untuk peluang baru!
+      </div>
+
+      <p class="mt">
+        Mahasiswa Informatika tahun ketiga di Universitas Pelita Harapan yang memiliki motivasi tinggi serta berkomitmen pada pembelajaran berkelanjutan. Saya aktif berorganisasi, mampu berbahasa bilingual (ID–EN), dan juga saya memiliki antusias tinggi pada teknologi, keamanan siber, serta analisis data.
+      </p>
+
+      <p class="mt">
+        <a class="btn" href="#contact"><b>Contact Me →</b></a>
+      </p>
+    </div>
+
+    <div class="hero-right">
+      <img src="img/jvn.jpg" alt="Jovinne" class="portrait">
+      <h3 class="role">ENTHUSIASTIC IT LEARNER</h3>
+    </div>
+  </section>
+  <hr>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title center">RECENT PROJECTS</h2>
+    <div class="textbox projects">
+
+      <!-- Project pertama: LINK ke GitHub Pages -->
+      <a class="card" href="https://jvnnnnnn.github.io/Project-Contoh/" target="_blank" rel="noopener">
+        <img src="img/flexboxproject.png" alt="Flexbox Project">
+        <h3>Flexbox Project</h3>
+        <p>Tugas Flexbox yang dideploy ke GitHub Pages.</p>
+      </a>
+
+      <div class="card">
+        <img src="img/FlightSimulatorPicture.png" alt="Flight Simulator">
+        <h3>Flight Simulator (JS &amp; CSS)</h3>
+        <p>Mini game simulasi untuk belajar logika pemrograman.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/DAAUASPic.png" alt="MST Algorithms">
+        <h3>Comparative Study of MST (C++)</h3>
+        <p>Analisis performa algoritma MST untuk rute MRT.</p>
+      </div>
+    </div>
+  </section>
 
   <hr>
 
-  <!-- bagian academic experience -->
-  <a name="experience"></a>
-  <h2>ACADEMIC &amp; EXPERIENCE</h2>
-  <table width="100%" cellpadding="10" cellspacing="0" border="0">
-    <tr>
-      <td width="20%"><h4>2023-2025</h4></td>
-      <td width="25%"><h4>Universitas Pelita Harapan</h4></td>
-      <td>Mahasiswa S1 Informatika dengan minat pada pengembangan aplikasi, keamanan siber, dan kecerdasan komputasional</td>
-    </tr>
-    <tr>
-      <td><h4>2021-2023</h4></td>
-      <td><h4>SMA IPEKA BSD</h4></td>
-      <td>Pelajar SMA jurusan IPA yang berfokus pada penguasaan dasar-dasar sains untuk mendukung minat di bidang teknologi dan inovasi.</td>
-    </tr>
-    <tr>
-      <td><h4>2023–2020</h4></td>
-      <td><h4>SMP IPEKA BSD</h4></td>
-      <td>Pelajar SMP dengan semangat tinggi untuk terus belajar dan mengasah keterampilan baru</td>
-    </tr>
-  </table>
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2 class="section-title flex-center">I CAN HELP YOU WITH</h2>
+    <div class="textbox services">
+      <div class="service">
+        <div class="num">01</div>
+        <h3>Website Design</h3>
+        <p>Antarmuka website dengan struktur jelas &amp; visual kuat.</p>
+      </div>
+      <div class="service">
+        <div class="num">02</div>
+        <h3>Mobile App</h3>
+        <p>Pengalaman mobile yang bersih dan konsisten.</p>
+      </div>
+      <div class="service">
+        <div class="num">03</div>
+        <h3>Data Analysis</h3>
+        <p>Insight tren &amp; prediksi dari data.</p>
+      </div>
+      <div class="service">
+        <div class="num">04</div>
+        <h3>Game Creation</h3>
+        <p>UX dan pengembangan game sesuai kebutuhan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION / STATS -->
+  <section class="section vision-section">
+    <!-- judul sekarang di atas teks & foto -->
+    <h2 class="section-title flex-center">TURNING MY VISION</h2>
+
+    <div class="container vision">
+      <div class="vision-left">
+        <p>Mengerjakan proyek-proyek IT yang berdampak dengan penuh makna.</p>
+
+        <div class="stats">
+          <div><b class="big">7+</b><br>Completed projects</div>
+          <div><b class="big">2+</b><br>Submission to journals</div>
+        </div>
+      </div>
+
+      <div class="vision-right">
+        <img src="img/EcoCityMatchPic.png" alt="Biggest Project" class="workshot">
+      </div>
+    </div>
+  </section>
+
 
   <hr>
 
-  <!-- bagian my workstation -->
-  <h2>MY WORKSTATION</h2>
-  <p>• Windows 11, version 24H2 • 12th Gen Intel(R) Core(TM) i7-12700H (2.30 GHz) • Drawing laptop • Stylus • </p>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title flex-center">EXPERIENCE &amp; SKILLS</h2>
+    <table class="experience">
+      <tr class="rowline">
+        <td width="20%"><h4>2023–2025</h4></td>
+        <td width="25%"><h4>Universitas Pelita Harapan</h4></td>
+        <td>Informatika — fokus aplikasi, keamanan siber, dan kecerdasan komputasional.</td>
+      </tr>
+      <tr class="rowline">
+        <td><h4>2021–2023</h4></td>
+        <td><h4>SMA IPEKA BSD</h4></td>
+        <td>Jurusan IPA untuk fondasi sains mendukung minat teknologi.</td>
+      </tr>
+      <tr class="rowline">
+        <td><h4>2020–2023</h4></td>
+        <td><h4>SMP IPEKA BSD</h4></td>
+        <td>Membangun semangat belajar &amp; soft skills.</td>
+      </tr>
+    </table>
+  </section>
 
   <hr>
 
-  <!-- bagian footer / contact -->
-  <a name="contact"></a>
-  <h2>MY CONTACTS</h2>
-  <p>Hubungi saya melalui kontak-kontak dibawah.</p>
-  <p>
-    <a href="github:github.com/jvnnnnnn"><b>GitHub: github.com/jvnnnnnn</b></a><br>
-    <a href="mailto:jovinne1705@gmail.com.design"><b>Email: jovinne1705@gmail.com</b></a><br>
-    <a href="tel:+6289667942327"><b>No HP: +6289667942327</b></a><br><br>
-    <a href="#home">Back to top ↑</a>
-  </p>
+  <!-- WORKSTATION -->
+  <section class="section">
+    <h2 class="section-title center">MY WORKSTATION</h2>
+    <p class="container text-only center-sm">
+      • Windows 11 24H2 • 12th Gen Intel® Core™ i7-12700H (2.30 GHz) • Drawing laptop • Stylus
+    </p>
+  </section>
 
   <hr>
-  <p>© 2025 Jovinne — Enthusiastic Programmer</p>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="section">
+    <h2 class="section-title center">MY CONTACTS</h2>
+    <p class="container text-only center-sm">Hubungi saya melalui kontak-kontak di bawah.</p>
+    <p class="container contacts center-sm">
+      <a href="github:github.com/jvnnnnnn"><b>GitHub: github.com/jvnnnnnn</b></a><br>
+      <a href="mailto:jovinne1705@gmail.com"><b>Email: jovinne1705@gmail.com</b></a><br>
+      <a href="tel:+6289667942327"><b>No HP: +62 896 6794 2327</b></a><br><br>
+      <a class="btn" href="#home">Back to top ↑</a>
+    </p>
+    <p class="copy">© 2025 Jovinne — Enthusiastic Programmer</p>
+  </footer>
 
 </body>
 </html>

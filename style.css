@@ -1,0 +1,310 @@
+/* ====== SIMPLE CSS ala “Tugas Kelas” ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-size: 15px; 
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color:#111;
+  background:#fff;
+}
+
+.section { 
+  padding: 24px 0; 
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr { 
+  border:0; 
+  height:1px; 
+  background:#eee; 
+}
+
+/* NAV */
+.brand { 
+  font-size: 24px; 
+  font-weight: 800; 
+}
+.menu a { 
+  text-decoration: none; 
+  color:#111; 
+  margin-left: 14px; 
+}
+
+.menu a:hover { 
+  text-decoration: underline; 
+}
+
+.menu .pill {
+  border: 1px solid #111; 
+  padding: 6px 12px; 
+  border-radius: 999px;
+}
+
+/* HERO */
+.hero-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding: 28px 16px;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff7ec 0%, #fde3c2 50%, #ffffff 100%);
+}
+
+.hero-left { 
+  flex: 1 1 55%; 
+}
+
+.hero-right { 
+  flex: 1 1 45%; 
+}
+
+.subtle {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
+} 
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background:#fff;
+}
+
+.badge .dot {
+  width: 10px; height: 10px;
+  border-radius: 999px;
+  background: #ff9a00;
+  display: inline-block;
+}
+
+.mt { 
+  margin-top: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #111;
+  border-radius: 6px;
+  color:#111; text-decoration: none;
+}
+
+.btn:hover { 
+  background:#111; color:#fff; 
+}
+
+.portrait {
+  width: 360px; height: 480px; object-fit: cover;
+  border-radius: 12px; display: block; margin: 0 auto;
+}
+.role {
+  font-size: 22px; font-weight: 900; margin-top: 10px; text-align: center;
+  
+}
+
+/* VISION */
+.vision { 
+  align-items: flex-start;
+  background: linear-gradient(180deg, #fffcf9 0%, #fff0dc 50%, #fff9f2 100%);
+  text-align: center; 
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.vision-left { 
+  flex: 1 1 55%; 
+  display: block;
+  
+}
+
+.vision-right {
+  flex: 1 1 45%; 
+}
+
+.workshot { 
+  width: 100%; 
+  height: auto; 
+  border-radius: 12px; 
+  border:1px solid #eee; 
+  display:block; 
+}
+
+.stats { 
+  display:flex; 
+  gap: 24px; 
+  margin-top:12px; 
+}
+
+.big { 
+  font-size: 32px;
+ 
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 28px; 
+  font-weight: 900;
+  max-width: 1100px; 
+  margin: 8px auto 12px; 
+  padding: 0 12px;
+}
+
+.center { 
+  text-align: center; 
+}
+
+/* TEXTBOX */
+.textbox {
+  display:flex; 
+  gap: 12px; 
+  max-width:1100px; 
+  margin:0 auto; 
+  padding: 0 12px;
+}
+
+/* PROJECT */
+.projects .card {
+  display: block;                  
+  flex: 1 1 300px;
+  background:#fff;
+  border:1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 0 #f3f3f3;     
+  color: inherit;                
+  text-decoration: none;            
+}
+
+.projects .card img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  display:block; 
+  margin-bottom: 8px;
+}
+
+.projects .card h3 { 
+  font-size: 18px; 
+  font-weight: 800; 
+  margin-bottom: 4px; 
+  
+}
+
+/* SERVICES */
+.services .service {
+  position: relative;
+  flex: 1 1 240px;
+  background:#fff;
+  border:1px solid #eeeeeee1;
+  border-radius: 12px;
+  padding: 16px 12px 12px;
+}
+
+.services .service .num {
+  font-size: 28px; 
+  font-weight: 800; 
+  color:#d5d5d5; 
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.services .service h3 { 
+  
+  font-size: 18px; 
+  font-weight: 800; 
+  margin-bottom: 6px; 
+}
+
+/* EXPERIENCE */
+.experience {
+  
+  width: 100%; 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  border-collapse: collapse;
+  
+}
+
+.experience td { 
+  padding: 12px; 
+}
+
+.rowline { 
+  border-top: 1px solid #e9e9e9; 
+}
+
+.experience .rowline:first-child { 
+  border-top: 2px solid #000; 
+  
+}
+
+/* FOOTER / CONTACT */
+.text-only { 
+  line-height: 1.6; 
+}
+
+.center-sm { 
+  text-align: center; 
+}
+
+.contacts a { 
+  color:#111; 
+  text-decoration: none; 
+}
+
+.contacts a:hover{ 
+  
+  text-decoration: underline; 
+}
+
+.copy{ 
+  font-size: 12px; 
+  color:#555; 
+  text-align: center; 
+  padding: 12px 0; 
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
