@@ -145,7 +145,7 @@ hr {
 .vision { 
   align-items: flex-start;
   background: linear-gradient(180deg, #fffcf9 0%, #fff0dc 50%, #fff9f2 100%);
-  text-align: center; 
+  text-align: left; 
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -153,8 +153,12 @@ hr {
 .vision-left { 
   flex: 1 1 55%; 
   display: block;
-  
 }
+
+.vision-left > p{
+  margin-left: 48px;   
+}
+
 
 .vision-right {
   flex: 1 1 45%; 
@@ -168,15 +172,23 @@ hr {
   display:block; 
 }
 
-.stats { 
-  display:flex; 
-  gap: 24px; 
-  margin-top:12px; 
+.stats{
+  display: flex;
+  flex-direction: column;     /* vertikal: atas–bawah */
+  align-items: flex-start;    /* label tetap rata kiri */
+  gap: 22px;                  /* jarak antar item */
+  margin-top: 16px;
+  margin-left: 48px;          /* geser sedikit ke tengah kolom kiri */
+}
+
+.stats > div { 
+  text-align: left; 
 }
 
 .big { 
   font-size: 32px;
- 
+  font-weight: 800; 
+  line-height: 1;
 }
 
 /* SECTION TITLES */
