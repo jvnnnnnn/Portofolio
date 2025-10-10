@@ -184,7 +184,7 @@ hr {
 /* vision */
 .vision {
     align-items: flex-start;
-    background: linear-gradient(180deg, #fffef9 0%, #fff8dc 50%, #fffdf2 100%);
+    background: linear-gradient(180deg, #fffef9 0%, #fff4ca 50%, #fdfbf5 100%);
     max-width: 1200px;
     text-align: left;
     flex-direction: column;
