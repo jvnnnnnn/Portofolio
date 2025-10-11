@@ -20,6 +20,7 @@ body {
 
 .section {
     padding: 24px 0;
+    background:#fff;
 }
 
 .container {
@@ -184,7 +185,7 @@ hr {
 /* vision */
 .vision {
     align-items: flex-start;
-    background: linear-gradient(180deg, #fffef9 0%, #fff4ca 50%, #fdfbf5 100%);
+    background: linear-gradient(180deg, #fffffd 0%, #fffae4 50%, #ffffff 100%);
     max-width: 1200px;
     text-align: left;
     flex-direction: column;
@@ -379,4 +380,5 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    background:#fff;
 }
